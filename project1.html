@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eccbc9;
+            color: #915858;
+        }
+
+        header {
+            background-color: #eccbc9;
+            color: #915858;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #915858;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.3s ease, font-size 0.3s ease;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        nav a:hover{
+            background-color: #a56c6c;
+            font-size: 18px;
+
+        }
+        @keyframes fadeIn {
+        from {
+        opacity: 0;
+        transform: translateY(20px);
+        }
+        to {
+        opacity: 1;
+        transform: translateY(0);
+        }
+        }
+
+        section {
+            text-align: center;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            background-color: white;
+            border: 2px solid #e0a2a2;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .row:last-child {
+            justify-content: center;
+        }
+
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #e0a2a2;
+            border: 4px solid #a56c6c;
+            padding: 10px;
+            width: 200px;
+        }
+
+        figure img {
+            width: 180px;
+            height: auto;
+            border: 4px solid #a56c6c;
+            transition: transform 0.3s ease;
+        }
+
+        figure img:hover {
+            transform: scale(1.1);
+        }
+
+        figcaption {
+            font-weight: bold;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        #contact {
+            text-align: center;
+            padding: 30px;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #915858;
+            display: inline-block;
+            text-align: left;
+            width: 60%;
+        }
+
+        form label {
+            font-weight: bold;
+            font-size: 16px;
+            color: #915858;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #915858;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        form button {
+            background-color: #915858;
+            color: white;
+            padding: 12px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        form button:hover {
+            background-color: #f3b6b6;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #915858;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Princess Abegail F. Arcueno BSIT 1 - YB - 6</h1>
+        <nav>
+            <ul>
+                <li><a href="#featured">Featured Products</a></li>
+                <li><a href="#sales">Sales Gallery</a></li>
+                <li><a href="#regular">Regular Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="featured">
+            <h2>Featured Products</h2>
+            <div class="gallery">
+                <div class="row">
+                    <figure>
+                        <img src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_840122904929-Rare-Beauty-Soft-Pinch-Liquid-Blush-Hope_03e24f0a628789e609a92a47233420d8a649163b_1640617014.png" alt="">
+                        <figcaption>Soft Pinch Liquid Blush</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_840122905414-Rare-Beauty-Positive-Light-Silky-Touch-Highlighter-Enlighten_533f437452ef13cfc2fd686485237d6b1943fa6c_1669645525.png" alt="Featured Product 2" alt="">
+                        <figcaption>Positive Light Silky Touch Highlighter</figcaption>
+                    </figure>
+                </div>
+                <div class="row">
+                    <figure>
+                        <img src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_840122903526-Rare-Beauty-Warm-Wishes-Effortless-Bronzer-Stick-Full-Of-Life_2bb6ee6431702de26f122d0320fa745622969463_1640616997.png" alt="Featured Product 3" alt="">
+                        <figcaption>Warm Wishes Effortless Bronzer Stick</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="sales">
+            <h2>Sales Gallery</h2>
+            <div class="gallery">
+                <div class="row">
+                    <figure>
+                        <img src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_840122907104-Rare-Beauty-Find-Comfort-Gentle-Exfol_b4960e7a5dd70fd3d1b25b05d96832810f220c8d_1736770008.png" alt="">
+                        <figcaption>Find Comfort Gentle Exfoliating Body Wash - 50% Off</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_840122907050-Rare-Beauty-Find-Comfort-Body-Hair-Fr_43821ce77eda9004caa8654d844f350784d9441f_1736770004.png" alt="">
+                        <figcaption>Find Comfort Body & Hair Fragrance Mist - Buy 1 Get 1</figcaption>
+                    </figure>
+                </div>
+                <div class="row">
+                    <figure>
+                        <img src="https://image-optimizer-reg.production.sephora-asia.net/eyJlZGl0cyI6eyJyZXNpemUiOnt9fX0=/images/product_images/zoom_1_Product_840122907043-Rare-Beauty-Find-Comfort-Hydrating-Bo_302cfe23aef953b7165fd1d444f39c168cc0c36a_1736770000.png" alt="">
+                        <figcaption>Find Comfort Hydrating Body Lotion - 10% Off</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="regular">
+            <h2>Regular Gallery</h2>
+            <div class="gallery">
+                <div class="row">
+                    <figure>
+                        <img src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_840122903212-Rare-Beauty-Perfect-Strokes-Universal-Volumizing-Mascara-13-5ml_01a29ebdfca9aa784b396bc358305895a0159eaf_1631685226.png" alt="">
+                        <figcaption>Curl, Lengthen, and Volumize</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_840122907241-Rare-Beauty-Soft-Pinch-Liquid-Contour_de70b815777071886f488178fadee2ca45e2bb6d_1736770016.png" alt="">
+                        <figcaption>Natural, and Liquid</figcaption>
+                    </figure>
+                </div>
+                <div class="row">
+                    <figure>
+                        <img src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_840122900150-Rare-Beauty-Positive-Light-Liquid-Luminizer-Reflect_82e9ee792d8b6a136cf292960d40c1a51f1414be_1623778448.png" alt="">
+                        <figcaption>Lasting, Soft, and Luminous</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Product Gallery</p>
+    </footer>
+</body>
+</html>

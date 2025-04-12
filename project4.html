@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+ <style>
+ 
+    button:hover {
+        background: #4CAF50;
+        color: white;
+    }
+    input:focus {
+        background-color: yellow;
+        width: 250px
+    }
+    
+    li:nth-child(2) {
+background-color: #947272;
+    }
+li:first-child {
+font-weight: bold;
+}
+li:last-child {
+font-style: italic;
+}
+h2::before{
+    content: '♥';
+    color:#4CAF50;
+}
+    p::after {
+    content: '[Students]';
+    color:#4CAF50;
+    font-style: italic;
+}
+    h2::first-letter{
+        font-size: 2em;
+        color: #4CAF50;
+    }
+    p::first-line {
+        color: #f94242;
+        font-weight: bold;
+    }
+    @keyframes transformExample {
+        0% { transform: rotate(0deg);}
+        50% { transform: rotate(90deg) scale(1.2);}
+    }
+    .transorm-box {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        animation: transformExample 2s infinite;
+    }
+    @keyframes opacityExample {
+        0% { opacity: 1;}
+        50% { opacity: 0.5;}
+        100% { opacity: 1;}
+    }
+    .opacity-box {
+        width: 100px;
+        height: 100px;
+        background-color: lightcoral;
+        animation: opacityExample 2s infinite;
+    }
+    @keyframes colorExample {
+        0% { background-color:red;}
+        50% { background-color: yellow;}
+        100% { background-color: blue;}
+    }
+    .color-box {
+        width: 100px;
+        height: 100px;
+        background-color: lightcoral;
+        animation: colorExample 2s infinite;
+    }
+    @keyframes positionExample {
+        0% { top: 0;}
+        50% { top: 50px;}
+        100% { top: 0;}
+    }
+    .position-box {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: lightgreen;
+        animation: positionExample 2s infinite;
+    }
+    @keyframes sizeExample {
+        0% { width: 100px;height: 100px;}
+        50% { width: 200px;height: 200px;}
+        100% { width: 100px;height: 100px;}
+    }
+    .size-box {
+        width: 100px;
+        height: 100px;
+        background-color: lightgoldenrodyellow;
+        animation: sizeExample 2s infinite;
+    }
+    @keyframes borderExample {
+        0% { border-radius: 0px;}
+        50% { border-radius: 50px;}
+        100% { border-radius: 0px;}
+    }
+    .border-box {
+        width: 100px;
+        height: 100px;
+        background-color: lightpink;
+        animation: borderExample 2s infinite;
+    }
+    @keyframes shadowExample {
+        0% { box-shadow: 0px 0px 0px rgba(0,0,0,0);}
+        50% { box-shadow: 5px 5px 15px rgba(0,0,0,0.3);}
+        100% { box-shadow: 0px 0px 0px rgba(0,0,0,0);}
+    }
+    .shadow-box {
+        width: 100px;
+        height: 100px;
+        background-color: lightsalmon;
+        animation: shadowExample 2s infinite;
+    }
+    @keyframes textExample {
+        0% { letter-spacing: 0px;}
+        50% { letter-spacing: 5px;}
+        100% { letter-spacing: 0px;}
+    }
+    .text-box {
+        font-size: 20px;
+        font-weight: bold;
+        animation: textExample 2s infinite;
+    }
+    .animated-button {
+       background-color: #ff5733;
+       color: white;
+       padding: 15px 30px;
+       font-size: 18px;
+       border: none;
+       border-radius: 8px;
+       cursor: pointer;
+       transition: transform 0.3s, background-color 0.3s ease;
+    }
+    .animated-button:hover {
+        background-color: #e14e2b;
+        transform: scale(1.1);
+    }
+    @keyframes tfadeInUp {
+        0% { opacity: 0; transform: translateY(50px);}
+        100% { opacity: 1; transform: translateY(0);}
+    }
+    .animated-image {
+        width: 100px;
+        border-radius: 10px;
+        animation: fadeInUp 1.5s ease-in-out;
+    }
+    .animated-image:hover{
+        transform: scale(1.1)
+    }
+        </style>
+</head>
+<body>
+    <h2> CSS Animatable Properties Example 10</h2>
+    <div class="container">
+        <img class="animated-image" src="https://i.pinimg.com/736x/3f/a8/37/3fa8375a14536880095c016003ac6033.jpg" alt="Sample Image" width="150px">
+    </div>
+    <h2> CSS Animatable Properties Example 9</h2>
+    <div class="container">
+        <button class="animated-button">Hover Me</button>
+    </div>
+    <h2> CSS Animatable Properties Example 8</h2>
+    <div class="container">
+        <div class="text-box">Text</div>
+    </div>
+    <h2> CSS Animatable Properties Example 7</h2>
+    <div class="container">
+        <div class="shadow-box">Box Shadow</div>
+    </div>
+    <h2> CSS Animatable Properties Example 6</h2>
+    <div class="container">
+        <div class="border-box">Border & Outline</div>
+    </div>
+    <h2> CSS Animatable Properties Example 5</h2>
+    <div class="container">
+        <div class="size-box">Size & Dimensions</div>
+    </div>
+    <h2> CSS Animatable Properties Example 4</h2>
+    <div class="container">
+        <div class="position-box">Positioning</div>
+    </div>
+    <h2> CSS Animatable Properties Example 3</h2>
+    <div class="container">
+        <div class="opacity-box">Opacity</div>
+    </div>
+    <h2> CSS Animatable Properties Example 2</h2>
+    <div class="container">
+        <div class="color-box">Color</div>
+    </div>
+    <h2> CSS Animatable Properties Example 1</h2>
+    <div class="container">
+        <div class="transorm-box">Transform</div>
+    </div>
+    <h2>Heading with ::before</h2>
+    <p>Hello World!!</p>
+
+    <h3> Button Hover Example</h3>
+        <button> Hover Me</button>
+
+        <h3> Input Focus Example</h3>
+        <input type="text" placeholder="Focus On me">
+
+        <h3>List Item Examples</h3>
+    <ul>
+    <li>First Item (bold)</li> 
+    <li>Second Item (backgroundcolor)</li>
+    <li>Third Item</li>
+    <li>Fourth Item</li>
+    <li>Last Item (italic) </li>
+</ul>
+</body>
+</html>

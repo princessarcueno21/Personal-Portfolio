@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+
+
+    /* Reset and Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #333;
+      opacity: 0;
+      animation: fadeInBody 1s ease forwards;
+    }
+
+    @keyframes fadeInBody {
+      to { opacity: 1; }
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+    }
+
+    a:hover {
+      opacity: 0.6;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0.5rem 1rem;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+      z-index: 1000;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .nav-links li {
+      position: relative;
+    }
+    
+    .home-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      object-fit: cover;
+      border-style: solid;
+      border: 2px solid #000;
+      transition: transform 0.3s ease;
+    }
+
+    .home-icon:hover {
+      transform: scale(1.1);
+    }
+
+    /* Banner */
+    .banner-home {
+      padding: 12rem 6rem 10rem;
+      /* increased top padding to offset fixed nav */
+      text-align: center;
+      animation: fadeIn 1.2s ease forwards;
+      opacity: 0;
+    }
+
+    .banner-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .banner-image {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #000;
+      transition: transform 0.3s ease;
+    }
+
+    .banner-image:hover {
+      transform: scale(1.1);
+    }
+
+    .banner-text h1 {
+      font-size: 2rem;
+    }
+
+    .banner-text p {
+      font-size: 1rem;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    /* Sections */
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 2rem auto;
+      border-bottom: 1px solid #ddd;
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+    }
+
+    section h2 {
+      margin-bottom: 1rem;
+    }
+
+    .project-gallery {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .project-gallery figure {
+      text-align: center;
+      max-width: 300px;
+    }
+    
+    .project-gallery figcaption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #444;
+      font-weight: bold;
+      
+    }
+
+    .project-gallery img {
+      width: 300px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0.9;
+    }
+
+    .project-gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 16px #00000033;
+      opacity: 1;
+    }
+
+    .contact-icons i {
+      margin-right: 8px;
+      color: #000;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 1rem;
+      color: #333;
+      font-size: 0.9rem;
+      border-top: 1px solid #ccc;
+    }
+  
+
+</style>
+
+<body>
+  <nav>
+    <div class="nav"></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home"></li>
+        <img src="images/pfp.JPG" alt="Home Icon" class="home-icon">
+      </a>
+    </ul>
+    </div>
+  </nav>
+
+
+  <main>
+    <section id="home" class="banner-home">
+      <div class="banner-content">
+        <a href="#about">
+        <img src="images/pfp.JPG" alt="Profile Picture" class="banner-image">
+        </a>
+        <div class="banner-text">
+          <h1>Hello, I'm Princess</h1>
+          <p>Balanced. Creative. Goal-driven.</p>
+          <div class="contact-icons">
+            <p>‎</p>
+            <a href="mailto:pfarcueno3253qc@student.fatima.edu.ph"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.instagram.com/heavensentsz/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/princess-abegail-flores-arcueno-65988135b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>    
+
+    <section id="about">
+      <h2>About</h2>
+      <p>‎</p>
+      <h3>Princess Abegail Flores Arcueno</h3>
+      <p>‎</p>
+      <p>As a BS Information Technology student, I’ve gone through a lot of learning—not just in terms of academics, but also in terms of personal growth. Throughout my journey, I’ve realized how important it is to stay goal-driven and focused, especially when managing school, projects, and social life. It’s not always easy, but I’ve learned how to manage my time and stay committed to what I want to achieve.</p>
+      <p>‎</p>
+      <p>Being in the IT field has challenged me to think more creatively and adapt quickly to changes. Every subject, group project, and hands-on experience has taught me something new—not only about technology, but also about myself. I’ve learned that I enjoy solving problems, working with others, and pushing myself to do better every time.</p>
+      <p>‎</p>
+      <p>I am committed to continuously expanding my skill set and striving for excellence in my chosen field. I plan to pursue further learning opportunities, including certifications, internships, and industry involvement, to stay current with emerging technologies and best practices. My long-term goal is to contribute meaningfully to the IT industry by developing impactful solutions and becoming a well-rounded, future-ready professional.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <article>
+        <p>‎</p>
+        <h3>Bachelor of Science in Information Technology</h3>
+        <p>Our Lady of Fatima University | 2024 - Present</p>
+        <p>‎</p>
+      </article>
+      <article>
+        <h3>Science Technology Engineering and Mathematics</h3>
+        <p>Our Lady of Fatima University | 2022 - 2024</p>
+        <p>‎</p>
+      </article>
+      <article>
+        <h3>Junior High School</h3>
+        <p>North Fairview High School | 2018 - 2022</p>
+        <p>‎</p>
+      </article>
+      <article>
+        <h3>Elementary</h3>
+        <p>East Point Academy | 2012 - 2018</p>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>I possess a strong set of soft skills that support my growth as an IT student and future professional. I am a fast learner with a proactive attitude, always eager to take on challenges and expand my knowledge. My communication skills allow me to collaborate effectively with peers and convey ideas clearly in both written and verbal formats. I work well in team environments and value constructive feedback, but I am also capable of working independently with discipline and focus. I am adaptable, detail-oriented, and organized—skills that help me manage time efficiently, stay productive, and deliver quality work even under pressure.</p>
+      <p>‎</p>
+      <p><strong>Programming Language</strong></p>
+      <ul>
+        <li>C++</li>
+      </ul>
+      <p><strong>Web Development</strong></p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+      <p><strong>Microsoft Office Skills</strong></p>
+      <ul>
+        <li>Microsoft Word</li>
+        <li>Microsoft Excel</li>
+        <li>Microsoft PowerPoint</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-gallery">
+        <figure>
+        <a href="project1.html" target="_blank">
+          <img src="images/project1.png" alt="Project 1">
+        </a>
+        <figcaption>Product Gallery</figcaption>
+      </figure>
+      <figure>
+        <a href="project2.html" target="_blank">
+          <img src="images/project2.png" alt="Project 2">
+        </a>
+        <figcaption>Resume Website</figcaption>
+      </figure>
+      <figure>
+        <a href="project3.html" target="_blank">
+          <img src="images/project3.png" alt="Project 3">
+        </a>
+        <figcaption>Registration Form</figcaption>
+      </figure>
+      <figure>
+        <a href="project4.html" target="_blank">
+          <img src="images/project4.png" alt="Project 4">
+        </a>
+        <figcaption>CSS Animatable Property</figcaption>
+      </figure>
+      <figure>
+        <a href="images/project5.jpg" target="_blank">
+          <img src="images/project5.jpg" alt="Project 5">
+        </a>
+        <figcaption>Count Up with Reset Circuit</figcaption>
+      </figure>
+      <figure>
+        <a href="images/project6.jpg" target="_blank">
+          <img src="images/project6.jpg" alt="Project 6">
+        </a>
+        <figcaption>Flow Chart</figcaption>
+      </figure>
+      <figure>
+        <a href="images/project7.png" target="_blank">
+          <img src="images/project7.png" alt="Project 7">
+        </a>
+        <figcaption>Lucky Number Program</figcaption>
+      </figure>
+      <figure>
+        <a href="images/project8.png" target="_blank">
+          <img src="images/project8.png" alt="Project 8">
+        </a>
+        <figcaption>Arithmethic Program</figcaption>
+      </figure>
+      <figure>
+        <a href="images/project9.png" target="_blank">
+          <img src="images/project9.png" alt="Project 9">
+        </a>
+        <figcaption>Menu Program</figcaption>
+      </figure>
+      <figure>
+        <a href="images/project10.png" target="_blank">
+          <img src="images/project10.png" alt="Project 10">
+        </a>
+        <figcaption>Microsoft Excel: Certificates</figcaption>
+      </figure>
+      <figure>
+        <a href="images/project11.png" target="_blank">
+          <img src="images/project11.png" alt="Project 11">
+        </a>
+        <figcaption>Microsoft PowerPoint: Karaoke</figcaption>
+      </figure>
+      <figure>
+        <a href="images/project12.png" target="_blank">
+          <img src="images/project12.png" alt="Project 12">
+        </a>
+        <figcaption>Microsoft Excel: Formula</figcaption>
+      </figure>
+      </div>
+    </section>
+    
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>‎</p>
+      <p class="contact-icons">
+        <a href="mailto:pfarcueno3253qc@student.fatima.edu.ph" target="_blank">
+          <i class="fas fa-envelope"></i>  princessarcueno21@gmail.com
+        </a>
+      </p>
+      <p class="contact-icons">
+        <a href="tel:639542977460">
+          <i class="fas fa-phone"></i>  +6395-4297-7460
+        </a>
+      </p>
+      <p class="contact-icons">
+        <a href="https://www.instagram.com/heavensentsz/" target="_blank">
+          <i class="fab fa-instagram"></i>  @heavensentsz
+        </a>
+      </p>
+      <p class="contact-icons">
+        <a href="https://www.linkedin.com/in/princess-abegail-flores-arcueno-65988135b/" target="_blank">
+          <i class="fab fa-linkedin"></i>  Princess Abegail 
+        </a>
+      </p>
+      <p class="contact-icons">
+        <p>‎</p>
+        <strong>Address:</strong> Matthew St., Jordan Park Homes, Commonwealth, Q.C
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Princess. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
